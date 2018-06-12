@@ -8,10 +8,14 @@
 
 <body>
 
-  <div id="game">
-    <p>Choose a Letter</p>
+  <div>
+      <p>Choose a Letter</p>
 
-    <p>Try to figure out the letter the computer has guessed between A-Z </p>
+      <p>Try to figure out the letter the computer has guessed between A-Z </p>
+  </div>
+
+  <div id="game">
+    
   </div>
 
   <script type="text/javascript">
@@ -25,7 +29,7 @@
     var userGuess = null;
 
     var letterToBeGuessed = alphabetLetters[Math.floor(Math.random() * alphabetLetters.length)];
-    console.log("Wins: " + wins + " Losses: " + losses + " GuessesLeft: " + guessesLeft + " Guesses so far: " + guessesSoFar + " Computer picked: " + letterToBeGuessed);
+    console.log("Wins: " + wins + " Losses: " + losses + " Guesses Left: " + guessesLeft + " Guesses so far: " + guessesSoFar + " Computer picked: " + letterToBeGuessed);
 
 
     document.onkeyup = function (event) {
