@@ -43,7 +43,7 @@
 
       if (letterToBeGuessed == userGuess) {
         wins++;
-        console.log("You won!");
+        alert("You won!");
         guessesLeft = 9;
         guessesSoFar = [];
         letterToBeGuessed = alphabetLetters[Math.floor(Math.random() * alphabetLetters.length)];
@@ -52,7 +52,7 @@
 
       if (guessesLeft == 0) {
         losses++;
-        console.log("You lost!");
+        alert("You lost!");
         guessesLeft = 9;
         guessesSoFar = [];
         letterToBeGuessed = alphabetLetters[Math.floor(Math.random() * alphabetLetters.length)];
